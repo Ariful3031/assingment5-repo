@@ -20,8 +20,14 @@ function historyDataInput(college) {
 
         historyContainer.appendChild(createDiv)
     }
-
 }
+
+// button history clear
+document.getElementById('btn-history-clear').addEventListener('click', function (event) {
+    event.preventDefault()
+    document.getElementById('history-container').innerText = "";
+})
+
 
 // Heart Button Section Starts
 // button one Heart
@@ -207,8 +213,6 @@ document.getElementById("btn-call-five").addEventListener("click", function (eve
     };
     historyData.push(data);
     historyDataInput("btn-call-five");
-
-
 })
 
 // btn-call-six
