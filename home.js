@@ -16,13 +16,12 @@ function historyDataInput(college) {
                 <p class="text-[#111111]">${data.date}</p>
 
             </div>
-        `
-
+      
+            `
         historyContainer.appendChild(createDiv)
     }
 }
-
-// button history clear
+// button History Clear
 document.getElementById('btn-history-clear').addEventListener('click', function (event) {
     event.preventDefault()
     document.getElementById('history-container').innerText = "";
@@ -48,6 +47,7 @@ document.getElementById("btn-heart-two").addEventListener("click", function (eve
     document.getElementById('heart-main-amount').innerText = newAmount;
 
 })
+
 
 
 // button three Heart
@@ -120,7 +120,7 @@ document.getElementById("btn-heart-ten").addEventListener("click", function (eve
 })
 
 
-// call button section
+// call button 
 
 
 // btn-call-one
@@ -335,23 +335,64 @@ document.getElementById("btn-call-ten").addEventListener("click", function (even
 
 })
 
+// btn copy section starts
+// function btn copy + count copy
 
-
-
-
-
-
-// document.getElementById("btn-heart-ten").addEventListener("click", function (event) {
-//     event.preventDefault()
-//     const mainAmount = parseInt(document.getElementById("heart-main-amount").innerText)
-//     const newAmount = mainAmount + 1;
-//     document.getElementById('heart-main-amount').innerText = newAmount;
-
-// })
-
-
-
-
+function selectToCopy(inputPaste) {
+    const callNumber = document.getElementById(inputPaste).innerText
+    const createTextarea = document.createElement("textarea");
+    createTextarea.value = callNumber;
+    createTextarea.setAttribute("readonly", "");
+    document.body.appendChild(createTextarea);
+    createTextarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(createTextarea);
+    alert("নাম্বার কপি হয়েছে: " + callNumber)
+    const addedCopyBalance = countMainCopyCall("count-main-copy")
+}
+//  countMainCopyCall
+function countMainCopyCall(inputCopy) {
+    const countMainCopy = parseInt(document.getElementById(inputCopy).innerText)
+    const newCountMainCopy = countMainCopy + 1;
+    document.getElementById("count-main-copy").innerText = newCountMainCopy;
+    return (countMainCopy);
+}
+// btn copy one
+document.getElementById('btn-copy-one').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-one");
+})
+// btn-copy-two
+document.getElementById('btn-copy-two').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-two");
+})
+// btn-copy-three
+document.getElementById('btn-copy-three').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-three");
+})
+// btn-copy-five
+document.getElementById('btn-copy-five').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-five");
+})
+// btn-copy-six
+document.getElementById('btn-copy-six').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-six");
+})
+// btn-copy-seven
+document.getElementById('btn-copy-seven').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-seven");
+})
+// btn-copy-eight
+document.getElementById('btn-copy-eight').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-eight");
+})
+// btn-copy-nine
+document.getElementById('btn-copy-nine').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-nine");
+})
+// btn-copy-ten
+document.getElementById('btn-copy-ten').addEventListener('click', function (event) {
+    const callNumber = selectToCopy("office-number-ten");
+})
 
 
 
