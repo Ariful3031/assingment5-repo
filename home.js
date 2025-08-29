@@ -28,6 +28,15 @@ document.getElementById('btn-history-clear').addEventListener('click', function 
 })
 
 
+// service-tittle-name-function
+
+
+function serviceTittleName(input7) {
+    const economic = document.getElementById(input7).innerText;
+    return (economic);
+}
+
+
 // Heart Button Section Starts
 // button one Heart
 document.getElementById("btn-heart-one").addEventListener("click", function (event) {
@@ -120,8 +129,11 @@ document.getElementById("btn-heart-ten").addEventListener("click", function (eve
 })
 
 
-// call button 
-
+// call button  all function
+function callOfficeNumber(callInput) {
+    const officeNumber = document.getElementById(callInput).innerText
+    return (officeNumber);
+}
 
 // btn-call-one
 document.getElementById("btn-call-one").addEventListener("click", function (event) {
@@ -131,12 +143,15 @@ document.getElementById("btn-call-one").addEventListener("click", function (even
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling National Emergency Number 999......")
+    const serviceTittle = serviceTittleName("service-tittle-one");
+    const helpline = callOfficeNumber("office-number-one");
+
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
     const data = {
-        name: "National Emergency Number",
-        number: "999",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -153,14 +168,15 @@ document.getElementById("btn-call-two").addEventListener("click", function (even
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Police Helpline Number 999......")
-
+    const serviceTittle = serviceTittleName("service-tittle-two");
+    const helpline = callOfficeNumber("office-number-two");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Police Helpline Number",
-        number: "999",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -177,14 +193,15 @@ document.getElementById("btn-call-three").addEventListener("click", function (ev
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Fire Service Number 999......")
-
+    const serviceTittle = serviceTittleName("service-tittle-three");
+    const helpline = callOfficeNumber("office-number-three");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Fire Service Number",
-        number: "999",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -201,14 +218,15 @@ document.getElementById("btn-call-five").addEventListener("click", function (eve
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Ambulance Service 1994-999999......")
-
+    const serviceTittle = serviceTittleName("service-tittle-five");
+    const helpline = callOfficeNumber("office-number-five");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Ambulance Service",
-        number: "1994-999999",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -223,14 +241,15 @@ document.getElementById("btn-call-six").addEventListener("click", function (even
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Women & Child Helpline 109......")
-
+    const serviceTittle = serviceTittleName("service-tittle-six");
+    const helpline = callOfficeNumber("office-number-six");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Women & Child Helpline",
-        number: "109",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -247,14 +266,15 @@ document.getElementById("btn-call-seven").addEventListener("click", function (ev
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Anti-Corruption Helpline 106......")
-
+    const serviceTittle = serviceTittleName("service-tittle-seven");
+    const helpline = callOfficeNumber("office-number-seven");
+    alert("Calling " + serviceTittle + helpline + " ......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Anti-Corruption Helpline",
-        number: "106",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -271,14 +291,15 @@ document.getElementById("btn-call-eight").addEventListener("click", function (ev
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Electricity Helpline 16216......")
-
+    const serviceTittle = serviceTittleName("service-tittle-eight");
+    const helpline = callOfficeNumber("office-number-eight");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Electricity Helpline",
-        number: "16216",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -295,14 +316,15 @@ document.getElementById("btn-call-nine").addEventListener("click", function (eve
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Brac Helpline 16445......")
-
+    const serviceTittle = serviceTittleName("service-tittle-nine");
+    const helpline = callOfficeNumber("office-number-nine");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Brac Helpline",
-        number: "16445",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
@@ -319,14 +341,15 @@ document.getElementById("btn-call-ten").addEventListener("click", function (even
         alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
-    alert("Calling Bangladesh Railway Helpline 163......")
-
+    const serviceTittle = serviceTittleName("service-tittle-ten");
+    const helpline = callOfficeNumber("office-number-ten");
+    alert("Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
     const data = {
-        name: "Bangladesh Railway Helpline",
-        number: "163",
+        name: serviceTittle,
+        number: helpline,
         date: new Date().toLocaleTimeString()
     };
     historyData.push(data);
