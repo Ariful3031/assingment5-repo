@@ -25,10 +25,10 @@ NodeList রিটার্ন করে
 
 
 ### answer to the question no : 2
- 
-1st. Create a element .
-2nd. setAttributes .
-3rd. appendChild()
+Dom এর ‍ভিতরে যে ভাবে একটি নতুন element তৈরি কবো এবং কি ভাবে কি ভাবে এটি insert করবো তা নিচে দেওয়া হলো:- 
+1. Create a element
+2. setAttributes 
+3. appendChild()
 
 
 ### answer to the question no : 3
