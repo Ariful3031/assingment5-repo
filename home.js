@@ -140,13 +140,13 @@ document.getElementById("btn-call-one").addEventListener("click", function (even
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-one");
     const helpline = callOfficeNumber("office-number-one");
 
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
     const data = {
@@ -165,12 +165,12 @@ document.getElementById("btn-call-two").addEventListener("click", function (even
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-two");
     const helpline = callOfficeNumber("office-number-two");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -190,12 +190,12 @@ document.getElementById("btn-call-three").addEventListener("click", function (ev
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-three");
     const helpline = callOfficeNumber("office-number-three");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -215,12 +215,12 @@ document.getElementById("btn-call-five").addEventListener("click", function (eve
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-five");
     const helpline = callOfficeNumber("office-number-five");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -238,12 +238,12 @@ document.getElementById("btn-call-six").addEventListener("click", function (even
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-six");
     const helpline = callOfficeNumber("office-number-six");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -263,12 +263,12 @@ document.getElementById("btn-call-seven").addEventListener("click", function (ev
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-seven");
     const helpline = callOfficeNumber("office-number-seven");
-    alert("Calling " + serviceTittle + helpline + " ......")
+    alert("📞Calling " + serviceTittle + helpline + " ......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -288,12 +288,12 @@ document.getElementById("btn-call-eight").addEventListener("click", function (ev
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-eight");
     const helpline = callOfficeNumber("office-number-eight");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -313,12 +313,12 @@ document.getElementById("btn-call-nine").addEventListener("click", function (eve
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-nine");
     const helpline = callOfficeNumber("office-number-nine");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -338,12 +338,12 @@ document.getElementById("btn-call-ten").addEventListener("click", function (even
     event.preventDefault()
     const countMainCoin = parseInt(document.getElementById("count-main-coin").innerText)
     if (countMainCoin < 20) {
-        alert("আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
+        alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 টা কয়েন লাগবে")
         return;
     }
     const serviceTittle = serviceTittleName("service-tittle-ten");
     const helpline = callOfficeNumber("office-number-ten");
-    alert("Calling " + serviceTittle + helpline + "......")
+    alert("📞Calling " + serviceTittle + helpline + "......")
     const newCountMainCoin = countMainCoin - 20;
     document.getElementById("count-main-coin").innerText = newCountMainCoin
 
@@ -370,7 +370,7 @@ function selectToCopy(inputPaste) {
     createTextarea.select();
     document.execCommand("copy");
     document.body.removeChild(createTextarea);
-    alert("নাম্বার কপি হয়েছে: " + callNumber)
+    alert("নাম্বার কপি হয়েছে:" + callNumber)
     const addedCopyBalance = countMainCopyCall("count-main-copy")
 }
 //  countMainCopyCall
